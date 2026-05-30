@@ -1,16 +1,16 @@
-# for i in  []:
+# for i in  ():
 #     print(i)
 
 # else:
 #     print("Sorry")
 
-i=0
-while(i<7):
-    print(i)
-    if i==5:
-        break
+# i=0
+# while(i<7):
+#     print(i)
+#     if i==5:
+#         break
        
 
-    i=i+1
+#     i=i+1
     
     
