@@ -1,35 +1,32 @@
-from abc import ABC ,abstractmethod
+from abc import ABC, abstractmethod
 
-class abstruct(ABC):
+class abstract(ABC):
     @abstractmethod
-    def aryea(self):
+    def name(self):
         pass
     @abstractmethod
-    def cars(self):
+    def decorate(self):
         pass
 
-class newshop(abstruct):
-    def shop_name(self):
+class newshop(abstract):
+    def name(self):
         pass
-
-class aryes(abstruct):
-    def aryea(self):
-        print("I have created")
-    def cars(self):
+    def decorate(self):
         pass
-class cars(abstruct):
-    def aryea(self):
+    
+
+    
+class name(abstract):
+    
+    def name(self):
+        print("The shop name=mistir dokan")
+    def decorate(self):
         pass
-    def cars(self):
-        print("Cat is present")
-        
-        
-        
+class decorate(abstract):
+    def name(self):
+        pass
+    def decorate(self):
+        print("The decorate should have ac")
 
-obj=aryes()
-obj.aryea()
-obj=cars()
-obj.cars()
-
-
-
+Name=name()
+Name.name()
