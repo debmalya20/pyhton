@@ -1,16 +1,32 @@
-class name:
-    def __init__(self,name):
-        self.name= name
-    def shwo(self):
-        print(f"The name is {self.name}")
+from abc import ABC, abstractmethod
 
-class human(name):
-    def __init__(self,name,age):
-        super().__init__(name)
-        self.age=age
-    def showage(self):
-        print(f"age of {self.name} is {self.age}")
-       
-# human2=human("deb")
-human2=human("deb",20)
-human2.showage()
+class abstract(ABC):
+    @abstractmethod
+    def name(self):
+        pass
+    @abstractmethod
+    def decorate(self):
+        pass
+
+# class newshop(abstract):
+#     def name(self):
+#         pass
+#     def decorate(self):
+#         pass
+    
+
+    
+class name(abstract):
+    
+    def name(self):
+        print("The shop name=mistir dokan")
+    def decorate(self):
+        pass
+class decorate(abstract):
+    def name(self):
+        pass
+    def decorate(self):
+        print("The decorate should have ac")
+
+Name=name()
+Name.name()

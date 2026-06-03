@@ -7,15 +7,7 @@ class abstract(ABC):
     @abstractmethod
     def decorate(self):
         pass
-
-class newshop(abstract):
-    def name(self):
-        pass
-    def decorate(self):
-        pass
-    
-
-    
+   
 class name(abstract):
     
     def name(self):
