@@ -16,7 +16,7 @@ def addition(*args):
 
 
 
-addition(12,45,766,34)
+addition(12,45,766,34.33)
 
 
 
