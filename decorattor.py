@@ -10,20 +10,20 @@
 
 # creating my own decarator
 
-# def callme(function):
-#     def wrapper(a,b):
-#         print("This is how we can create out own decorate")
-#         function(a,b) #this function will take me() function
-#         print("Then this will print")
-#     return wrapper
+def callme(function):
+    def wrapper(a,b):
+        print("This is how we can create out own decorate")
+        function(a,b) #this function will take me() function
+        print("Then this will print")
+    return wrapper
 
 
-# @callme
+@callme
 
-# def addition(a,b):
-#    print(f"The sum of your numbers are={a+b}")
+def addition(a,b):
+   print(f"The sum of your numbers are={a+b}")
 
-# addition(10,22)
+addition(10,22)
     
 
 
