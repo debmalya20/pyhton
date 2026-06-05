@@ -7,7 +7,13 @@
 
 #now if i want more then 2 veriables
 #When we create a *args it cretas a tupple 
-
+def addition(function):
+    def wrapper(*args):
+        print("The sum of your inputs are:-")
+        function(*args)
+        print("Theis action is over")
+    return wrapper
+@addition
 def addition(*args):
     sum=0
     for i in args:
