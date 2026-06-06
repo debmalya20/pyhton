@@ -23,22 +23,50 @@
 #         print(f"{i}={data[i]}")
 
 # inputs("A","B","C","D")
-def decorate(function):
-    def wrapper(*args):
-        print("This is the practice question if taking inputs using args\n")
-        function(*args)
-        print("\nThis action has ended")
-    return wrapper
+# def decorate(function):
+#     def wrapper(*args):
+#         print("This is the practice question if taking inputs using args\n")
+#         function(*args)
+#         print("\nThis action has ended")
+#     return wrapper
 
-@decorate
-def taking_input(*args):
-    data={}
+# @decorate
+# def taking_input(*args):
+#     data={}
 
-    for i in args:
-        value=input(f"Enter the value of {i}=")
-        data[i]=value
+#     for i in args:
+#         value=input(f"Enter the value of {i}=")
+#         data[i]=value
 
-    for i in args:
-        print(f"{i}={data[i]}")
+#     for i in args:
+#         print(f"{i}={data[i]}")
 
-taking_input("A","B","C","D")
+# taking_input("A","B","C","D")
+
+# def Details(function):
+#     def wrapper(*args):
+#         print("The detils of the student:")
+#         function(*args)
+#         print("The action is over")
+#     return wrapper
+# @Details
+# def take_input(*args):
+#     data={}
+#     for i in args:
+#         details=input(f"Enter the details {i}=")
+#         data[i]=details
+
+#     for i in args:
+#         print(f"{i}={data[i]}")
+# take_input("Nmae","roll","occupation","skills")
+l=[]
+for i in range(1,21):
+    if i%2 ==0:
+        l.append(i)
+    else:
+        print(f"odd={i}")
+  
+print("The even number are",l)
+      
+
+    
