@@ -7,6 +7,7 @@
 
 #now if i want more then 2 veriables
 #When we create a *args it cretas a tupple 
+#this is decorator with multiple attributes accesting
 def addition(function):
     def wrapper(*args):
         print("The sum of your inputs are:-")
@@ -23,6 +24,8 @@ def addition(*args):
 
 
 addition(12,45,766,34.33)
+
+
 
 
 
