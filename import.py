@@ -1,8 +1,7 @@
-from deb import * # by using * you can impliment all files at once
-from deb import welcome,deb #i am importing this fumction of deb.py file
-from math import degrees #by this process you can import functions
-from math import degrees as m # by this you can make any file name as m
-result=m(1)
-print(result)
-welcome()
-print(deb)
+#this is how we can impliment the function of any other file my importing
+# import mymath 
+
+# print(mymath.addition(12,23))
+#we can also direcly imort function
+from  mymath import addition
+print(addition(12,34))
