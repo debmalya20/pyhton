@@ -59,14 +59,21 @@
 #     for i in args:
 #         print(f"{i}={data[i]}")
 # take_input("Nmae","roll","occupation","skills")
-l=[]
-for i in range(1,21):
-    if i%2 ==0:
-        l.append(i)
-    else:
-        print(f"odd={i}")
+# l=[]
+# for i in range(1,21):
+#     if i%2 ==0:
+#         l.append(i)
+#     else:
+#         print(f"odd={i}")
   
-print("The even number are",l)
-      
-
+# print("The even number are",l)
+# odd_even= lambda a : "even" if a%2 ==0 else "odd"
+# print(odd_even(12))
+   
+# check= lambda a : "even" if a%2==0 else "odd"
+# print(check(20))
     
+def details(**kargs):
+    for i in kargs:
+        print(f"{i}={kargs[i]}")
+details(Name="DEBMALYA",Roll="17")
